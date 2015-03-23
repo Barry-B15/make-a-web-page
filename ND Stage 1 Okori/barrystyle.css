@@ -1,0 +1,66 @@
+/* This is how to comment in css, a slash followed by a star and end with a star followed by a slash */
+body {
+	font-family: Helvetica;
+	font-size: 1.2em;
+	margin: 0 auto; /* 0 margin top and bottom, auto for automatic */
+	background-color: #d2d4d2;
+	border: 2px dotted red;
+}
+div { /* Any style added here will affect all divs on the page */
+	color: black;
+	margin: 5px; 
+	border-radius: 10px;
+	padding-bottom: 2px;
+} 
+.lesson {
+	background-color: gray;
+	border: 1px dotted yellow;
+}
+.concept {
+	background-color: #f6facd;
+}
+.concept-title {
+	color: #294860;
+	font-size: 2em;
+	font-family: serif;
+	margin-left: 10px;
+	text-align: center;
+}
+.concept-description {
+	font-weight: lighter;
+}
+h1 {
+	background-color: white;
+	margin-top: 5px;
+	border-radius: 3px;
+	padding-left: 20px;
+}
+h2 {
+	color: white;
+	margin-left: 10px;
+}
+h3 {
+	color: #294860;
+	margin-left: 10px;
+}
+.TOC {
+	color: red;
+	background-color: gray;
+}
+.code {
+	background-color: #f0f9fa;
+}
+.maroon {
+	color: maroon;
+}
+.quote {
+	background-color: #d2d4d2;
+	font-style: italic;
+	font-weight: lighter;
+}
+a:link {
+	text-decoration: none; /* This line helps to remove the underlines from the links */
+}
+a:hover {
+	color: red; /* This line makes the link turn red when you mouse over it */
+}
