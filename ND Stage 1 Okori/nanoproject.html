@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+	<!-- This is how to comment in html. This line tells the browser that the content is an html document -->
+<head>
+	<title>Okori: Studying ND</title>
+	<link rel="stylesheet" type="text/css" href="barrystyle.css">
+</head>
+<body> <!-- It's always a good idea to add comments to html to remember what goes where and to help others who read/work on the site later -->
+	<div class="TOC"> <!-- This container is for the table of content -->
+		<h1>Table of Contents</h1>
+		<ol> <!-- Ordered list will list the output with number 1,2,3,... -->
+			<li><a href="#lesson-1"> Lesson 1: Introduction</a>
+				<ul>
+					<li><a href="#lesson-1.1">Getting Started: Nanodegree</a></li>
+					<li><a href="#lesson-1.2">Five Steps to Thinking like a Programmer</a></li>
+					<li><a href="#lesson-1.3">How The Web Works</a></li>
+					<li><a href="#lesson-1.4">Components of the Web</a></li>
+					<li><a href="#lesson-1.5">Basic HTML Vocabulary</a></li>
+				</ul>
+			</li>
+			<li class="TOC-lesson"><a href="#lesson-2">Lesson 2: Creating a Structured Document with HTML</a>
+				<ul>
+					<li><a href="#lesson-2.1">HTML Structure</a></li>
+					<li><a href="#lesson-2.2">Relationship between indented HTML and boxes</a></li>
+					<li><a href="#lesson-2.3">Text Editors</a></li>
+					<li><a href="#lesson-2.4">Developer Tools</a></li>
+				</ul>
+			</li>
+			<li class="TOC-lesson"><a href="#lesson-3">Lesson 3: Adding CSS Style to HTML Structure</a>
+				<ul>
+					<li><a href="#lesson-3.1">CSS</a></li>
+					<li><a href="#lesson-3.2">Inheritance</a></li>
+					<li><a href="#lesson-3.3">Selectors</a></li>
+					<li><a href="#lesson-3.4">Boxing</a></li>
+				</ul>
+			</li>
+			<li class="TOC-lesson"><a href="#design-hints">Important Design Hints</a>
+				<ul>
+					<li><a href="#hint-1">Hint 1</a></li>
+				</ul>
+			</li>
+		</ol>
+	</div>
+	<div class="lesson"> <!-- The lesson content starts here -->
+		<h2 id="lesson-1">Lesson 1: Introduction</h2>
+		<div class="concept" id="lesson-1.1">
+			<div class="concept-title"> <!-- The lesson concept -->
+				Getting Started
+			</div>
+			<div class="concept-description"> <!-- Lesson description is the leeson content -->
+				<h3>Nanodegree</h3>
+				<p>
+          			Nanodegree is a <b>Path</b>, from Nothing to gaining new knowledge and new skills, to learning new ways of thinking.<br>After this program,<b> we could choose to specialize in</b>: Full stack programming, Frontend Web Development, ios development or something else.
+        		</p>
+        		<h3>Coding</h3>
+        		<p>
+          			Coding a computer means telling the computer what you want it to do, by writing text in a way the computer understands
+        		</p>
+			</div>
+		</div>
+		<div class="concept" id="lesson-1.2">
+			<div class="concept-title">
+				Five steps to Thinking like a Programmer
+			</div>
+			<div class="concept-description">
+				<p>
+          			Computer programmers follow a systematic way of thinking and approaching computer programs. They take five different steps:
+        		</p>
+        		<ol>
+        			<li>
+        				<b>  Procedural Thinking</b>:  Step by step approach to program design and creation, using clear instructions that the computer understand.</li>
+        			<li>
+        				<b> Abstract Thinking:</b> 
+          				Using abstract thinking like: 1+1 = 2 and finding similarities(generality) amongst seemingly different things.
+        			</li>
+        			<li>
+        				<b>Technological Empathy:</b> Knowing how the computer sees things and using that to write instructions like: <b>I'm bold</b>, taking special note that the computer is stupid and that any little mistake could cause big problems.
+        			</li>
+        			<li>
+        				<b>Systems Thinking</b>:  Take a big idea and break it down into component pieces. 
+        			</li>
+        			<li>
+        				<b>Systematic debugging</b>: - Look at a program problem, think of possible causes and find a way to fix it.
+        			</li>
+        		</ol>
+			</div>
+		</div>
+		<div class="concept" id="lesson-1.3">
+			<div class="concept-title">
+				How The Web Works
+			</div>
+			<div class="concept-description">
+				<p>
+          			The <b>Web</b> is a collection of computers that communicate with each other. When we type a request on our <em>BROWSERS</em> to a <em>WEB PAGE</em>, the web page send our requests through the <em>INTERNET</em> using the <em>HTTP</em> protocol to the <em>SERVER</em>. The server then sends the requested file or document to our browsers through the internet. Web documents may be <em>plain text, html, images, video or music</em> files.
+       			</p>
+			</div>
+		</div>
+		<div class="concept" id="lesson-1.4">
+			<div class="concept-title">
+				Components of the Web
+			</div>
+			<div class="concept-description">
+				<p>
+          			<b><em>HTML</em></b> The web is made up of HTML pages. HTML stands for Hypertext Markup Language. They form majority of the contents on the web today.  HTML components are <em>text contents</em> - the contents we see on a web page and <em>markup</em> - which tells the computer how to render the content (we usually don't see this part).<br><b><em>URL</em></b> Stands for Univeral Resource Locator. They are the links on a website or the web addresses linked from web pages. For example, the link to <a href="https://www.udacity.com">Udacity Homepage</a><br><b><em>HTTP</em></b> Is short for Hypertext Transfer Protocol, the foundation and protocol that unite the web.<br><b><em>Web Applications</em></b> And of course web applications
+        		</p>
+			</div>
+		</div>
+		<div class="concept" id="lesson-1.5">
+			<div class="concept-title">
+				Basic HTML Vocabulary
+			</div>
+			<div class="concept-description">
+				<p>
+          			<em><b>Tag:</b></em> An html tag is always contained in angled brackets, an opening &lt; &gt; and closing &lt;/ &gt; tags.<br> <b>Void</b> tags like "break" - &lt;br &gt;  and "image" - &lt;img &gt; have no closing tag<br>An html <b>Element</b> refer to everything between the opening and closing tags and the <b>Attribute</b> refers to the property of the element.<br> HTML could be either <b>inline</b> which posts inline or <b>block</b> which creates an invisible block around contents. <br> Examples of inline elements are the &lt;break&gt; &lt;em&gt;, &lt;img&gt;,&lt;span&gt;. While the &lt;p&gt;, &lt;div&gt;, &lt;form&gt; are "block" elements.
+         			 <br>HTML controls the structure of a webpage. They are like the walls of a house. 
+        		</p>
+			</div>
+		</div>
+	</div>
+	<div class="lesson">
+		<h2  id="lesson-2">Lesson 2: Creating a Structured Document with HTML</h2>
+		<div class="concept" id="lesson-2.1">
+			<div class="concept-title">
+				HTML Structure
+			</div>
+			<div class="concept-description">
+				<p>
+					HTML is structured like the branches of a tree. Developers and programmers refer to this tree-like structure as <b>DOM</b> -"Document Object Mode". This tree-like structure can be likened to a family tree starting from children to parents, to grand-parents up to ancestors.
+					The HTML structure can also be compared to a house with a sitting-room leading to other rooms.
+				</p>
+			</div>
+		</div>
+		<div class="concept" id="lesson-2.2">
+			<div class="concept-title">
+				Relationship between indented HTML and boxes
+			</div>
+			<div class="concept-description">
+				<p>
+					Everything on a page is a box. And the boxes are nested. When we read HTML as documents, for example in Developer tools, we see a wave of changing indentations down from left to right. This shows the position of the box as related to others. The indented an element is, the more deeply nested its corresponding box.
+				</p>
+			</div>
+		</div>
+		<div class="concept" id="lesson-2.3">
+			<div class="concept-title">
+				Text Editors
+			</div>
+			<div class="concept-description">
+				<p>
+					There are many types of text editors. Examples are Scratchpad, Codepen, Sublime, Notepad to mention a few. It is recommended we don't use Notepad as they are not designed for coding for computers. We are recommended to use Scratchpad to write HTML and CSS, then copy and paste in Codepen to share. Use Sublime to write and save on computers
+				</p>
+				<ul>
+					<li>Scratchpad: Good for beginners, supports two languages but impossible for sharing</li>
+					<li>Codepen: Not very beginner friendly, supports three languages and very professionalism but requires an account</li>
+					<li>Sublime: Is difficult for beginners but its highest rated for professional works and supports all languages.</li>
+				</ul>
+			</div>
+		</div>
+		<div class="concept" id="lesson-2.4">
+			<div class="concept-title">
+				Developer Tools
+			</div>
+			<div class="concept-description">
+				Developer tools are available in browsers. They provide a great way for us to test our codes, resize the boxes and try new colors and fonts without changing our codes until we find something satisfactory.
+			</div>
+		</div>
+	</div>
+	<div class="lesson">
+		<h2 id="lesson-3">Lesson 3: Adding CSS Style to HTML Structure</h2>
+		<div class="concept" id="lesson-3.1">
+			<div class="concept-title">
+				CSS
+			</div>
+			<div class="concept-description">
+				<p>
+					<b><em>CSS</em></b> - Cascading Style Sheet is used to control and style our pages. It is comparable to the paints on our walls or the furniture in our homes. So we build the structures of our pages with HTML and style them using CSS.
+				 	It allows us to use specific syntax and rules to change how elements look on the page. With CSS, we can control font-sizes, colors, background, border and positions of things on our pages. For example; we can use CSS to style all &lt;h1&gt; on our page to <span class="maroon">MAROON</span>
+				</p>
+			</div>
+		</div>
+		<div class="concept" id="lesson-3.2">
+			<div class="concept-title">
+				Inheritance
+			</div>
+			<div class="concept-description">
+				<p>
+					In CSS, the most specific rule is applied to every element. Thats called Cascading. We go down and down the into the rule until we find the one that best describe the elements and that gets applied. This method is called <b>Inheritance</b>.<br>
+					According to wikipedia:<br> <b>Inheritance is a key feature in CSS, it relies on the ancestor-descendant relationship to operate. Inheritance is the mechanism by which properties are applied not only to a specified element, but also to its descendants.[11] Inheritance relies on the document tree, which is the hierarchy of (X)HTML elements in a page based on nesting. Descendant elements may inherit CSS property values from any ancestor element enclosing them. In general, descendant elements inherit text-related properties, but box-related properties are not inherited.<br> <span class="quote"> Properties that can be inherited are color, font, letter-spacing, line-height, list-style, text-align text-indent, text-transform, visibility, white-space and word-spacing.<br>Properties that cannot be inherited are background, border, display, float and clear, height and width, margin, min- and max-height and -width, outline, overflow, padding, position, text-decoration, vertical-align and z-index.</span>
+					Inheritance prevents certain properties from being declared over and over again in a style sheet, allowing the software developers to write less CSS. It enhances faster-loading of web pages by users and enables the clients to save money on bandwidth and development costs.</b><br>We can find documentation for fonts at <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font">MDN CSS-Fonts</a>
+				</p>
+			</div>
+		</div>
+		<div class="concept" id="lesson-3.3">
+			<div class="concept-title">
+				Selector
+			</div>
+			<div class="concept-description">
+				<p>
+					A <b>Selector</b> defines what elements of a page a particular 	style will apply to. For example div followed by two {} braces will select the elements of the div, between the braces. The code is "selector { property: value;}"<br> <span class="code">h1 { <br>&nbsp;&nbsp;&nbsp;&nbsp;color: yellow;<br>}</span> <br>tells the browser to make the color of h1, yellow.<br> To select a particular div, we use the <b>Class Selector</b> property value. <br>For example; &lt;div class=&quot;navigation&quot;&gt;, we write <br><span class="code">.navigation { <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color: red;<br>}</span>
+				</p>
+			</div>
+		</div>
+		<div class="concept" id="lesson-3.4">
+			<div class="concept-title">
+				Boxing
+			</div>
+			<div class="concept-description">
+				<p>
+					There are four main points that Jessica address about box sizing.
+				</p>
+				<ol>
+					<li>
+						HTML elements are boxes and each box has 4 components.
+					</li>
+					<li>
+						Because there are so many components to each box, it can often be hard to get the size of a box just right.
+					</li>
+					<li>
+						There are two techniques you can use to help deal with sizing issues.
+						<ul> <!-- Example of a list in a list, this one is un-ordered so the output will no list numbers -->
+							<li>Set sizes in terms of percents rather than pixels.</li>
+							<li>Set the box-sizing attribute to border-box for every element.</li>
+						</ul>
+					</li>
+					<li>
+						Different browsers work slightly differently. Sometimes this 	causes different browsers to display the same code differently
+					</li>
+				</ol>	
+				<h3>Box Positioning</h3>
+				<ul>
+					<li>
+						By default, block elements like divs take up the entire with of the page
+					</li>
+					<li>
+						To display several elements next to each other we add <span class="code">display: flex;</span> to the mother div or container
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="lesson"> <!-- In this container, I'd be adding coding and design hints. The first set of hints I've labelled Hint 1 -->
+		<h2 id="design-hints">Important Design Hints</h2>
+		<div class="concept" id="hint-1">
+			<div class="concept-title">
+				Hint 1
+			</div>
+			<div class="concept-description">
+				<ol>
+					<li>Look for natural boxes</li>
+					<li>Look for repeated styles and semantic elements</li>
+					<li>Write your HTML</li>
+					<li>Apply styles from the biggest site-wide elements to the smallest</li>
+					<li>Test design on other browsers, resize windows, and fix things using steps 3 and 4 above</li>
+					<li>Use google developers tools to test colors, font, sizes on the fly without changing codes unless necessary</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
